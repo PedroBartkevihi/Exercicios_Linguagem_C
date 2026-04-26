@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/* Leia a quantidade de bytes de um arquivo e a velocidade de transmissão em bytes por segundo e
-imprimir quantos segundos serão necessários para fazer o download do arquivo. */
+/*Leia a quantidade de bytes de um arquivo e a velocidade de transmissão em bytes por segundo e
+imprimir quantos segundos serão necessários para fazer o download do arquivo.*/
 
 int main()
 {
