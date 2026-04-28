@@ -1,0 +1,7 @@
+# Arquivos gerados pela compilação
+*.exe
+*.o
+*.out
+
+# Pasta de saída
+output/
