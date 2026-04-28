@@ -3,5 +3,6 @@
 *.o
 *.out
 
-# Pasta de saída
+# Pastas de saída
 output/
+*/output/
