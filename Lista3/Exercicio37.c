@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Exiba o menu abaixo até o usuário entrar com a opção 4. Para cada item selecionado,
+/*Exiba o menu abaixo até o usuário entrar com a opção 4. Para cada item selecionado,
 leia um número inteiro n e execute a opção escolhida pelo usuário.
 
 MENU DE OPÇÕES:
