@@ -38,13 +38,20 @@ Exercicios_Linguagem_C/
 
 ## Progresso
 
+O repositório terá **10 listas** no total. 5 estão concluídas até o momento.
+
 - [x] **Lista 1** — Variáveis, entrada/saída e expressões aritméticas (25 exercícios)
 - [x] **Lista 2** — Operadores lógicos e estruturas de seleção (28 exercícios)
 - [x] **Lista 3** — Estruturas de repetição (41 exercícios)
 - [x] **Lista 4** — Vetores e matrizes (36 exercícios)
 - [x] **Lista 5** — Strings (24 exercícios)
+- [ ] **Lista 6**
+- [ ] **Lista 7**
+- [ ] **Lista 8**
+- [ ] **Lista 9**
+- [ ] **Lista 10**
 
-Total: **154 exercícios** resolvidos.
+Total: **154 exercícios** resolvidos em 5 de 10 listas.
 
 ## Listas de exercícios
 
