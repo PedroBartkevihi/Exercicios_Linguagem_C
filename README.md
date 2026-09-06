@@ -2,7 +2,7 @@
 
 Coleção de exercícios resolvidos durante meus estudos de linguagem C. O repositório
 serve como registro da minha evolução, organizado em listas que acompanham a progressão
-dos conteúdos — dos primeiros programas de entrada e saída até a manipulação de strings.
+dos conteúdos — dos primeiros programas de entrada e saída até a modularização com funções.
 
 ## Sobre o projeto
 
@@ -32,26 +32,27 @@ Exercicios_Linguagem_C/
 ├── Lista3/                     # Exercicio01.c ... Exercicio41.c
 ├── Lista4/                     # Exercicio01.c ... Exercicio36.c
 ├── Lista5/                     # Exercicio01.c ... Exercicio24.c
+├── Lista6/                     # Exercicio01.c ... Exercicio37.c
 ├── .gitignore
 └── README.md
 ```
 
 ## Progresso
 
-O repositório terá **10 listas** no total. 5 estão concluídas até o momento.
+O repositório terá **10 listas** no total. 6 estão concluídas até o momento.
 
 - [x] **Lista 1** — Variáveis, entrada/saída e expressões aritméticas (25 exercícios)
 - [x] **Lista 2** — Operadores lógicos e estruturas de seleção (28 exercícios)
 - [x] **Lista 3** — Estruturas de repetição (41 exercícios)
 - [x] **Lista 4** — Vetores e matrizes (36 exercícios)
 - [x] **Lista 5** — Strings (24 exercícios)
-- [ ] **Lista 6**
+- [x] **Lista 6** — Funções (37 exercícios)
 - [ ] **Lista 7**
 - [ ] **Lista 8**
 - [ ] **Lista 9**
 - [ ] **Lista 10**
 
-Total: **154 exercícios** resolvidos em 5 de 10 listas.
+Total: **191 exercícios** resolvidos em 6 de 10 listas.
 
 ## Listas de exercícios
 
@@ -139,6 +140,26 @@ Conceitos praticados:
 - `<ctype.h>` (`tolower`, `toupper`, `isalpha`, `isdigit`)
 - Vetores de frequência e aritmética modular
 
+### Lista 6 — Funções
+
+Cada exercício pede para implementar uma função com uma assinatura específica e testá-la
+no `main`. Os problemas retomam temas das listas anteriores (dígitos de um número,
+divisores, operações sobre vetores e strings, conversões de horário) agora organizados em
+funções reaproveitáveis, muitas vezes chamando funções auxiliares umas das outras.
+Também entram tópicos novos: passagem de parâmetros por ponteiro (simulando referência),
+números aleatórios e problemas maiores como área de polígono, jogo de Craps e validação
+de CPF.
+
+Conceitos praticados:
+
+- Definição e chamada de funções próprias
+- Parâmetros por valor e retorno (`int`, `double`, `bool`, `void`)
+- Passagem de vetores e strings para funções
+- Passagem por referência com ponteiros (`int *p`, `*p`, `&var`)
+- Composição e reaproveitamento de funções auxiliares
+- Números aleatórios com `rand`, `srand` e `time` (`<stdlib.h>`, `<time.h>`)
+- `long long` para números grandes (validação de CPF)
+
 ## Tecnologias
 
 - **Linguagem C** — usa recursos do padrão C99, como declaração de variável no `for`,
@@ -169,7 +190,7 @@ A convenção do repositório é gerar os binários em `Lista<N>/output/`, pasta
 Git (crie-a na primeira vez, se necessário).
 
 Os exercícios que incluem `<math.h>` precisam da flag `-lm` na compilação (Lista 2 —
-exercícios 10, 12, 13 e 14; Lista 3 — exercício 14):
+exercícios 10, 12, 13 e 14; Lista 3 — exercício 14; Lista 6 — exercícios 1, 8, 9 e 33):
 
 ```bash
 gcc Lista2/Exercicio12.c -o exercicio -lm
