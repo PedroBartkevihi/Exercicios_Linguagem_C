@@ -1,15 +1,16 @@
 # Exercícios em C
 
 Coleção de exercícios resolvidos durante meus estudos de linguagem C. O repositório
-serve como registro da minha evolução, organizado em listas que acompanham a progressão
-dos conteúdos — dos primeiros programas de entrada e saída até a modularização com funções.
+serve como registro da minha evolução, organizado em oito listas que acompanham a
+progressão dos conteúdos — dos primeiros programas de entrada e saída até recursão e
+estruturas (`struct`).
 
 ## Sobre o projeto
 
 - Cada lista reúne exercícios em torno de um tema central da linguagem.
 - O enunciado de cada exercício fica no próprio código, em um comentário no início do arquivo.
 - O foco é praticar lógica de programação e os recursos da linguagem, não entregar um produto final.
-- O conteúdo é atualizado conforme avanço nos estudos.
+- Todas as 8 listas estão concluídas.
 
 Padrão adotado:
 
@@ -33,13 +34,15 @@ Exercicios_Linguagem_C/
 ├── Lista4/                     # Exercicio01.c ... Exercicio36.c
 ├── Lista5/                     # Exercicio01.c ... Exercicio24.c
 ├── Lista6/                     # Exercicio01.c ... Exercicio37.c
+├── Lista7/                     # Exercicio01.c ... Exercicio12.c
+├── Lista8/                     # Exercicio01.c ... Exercicio10.c
 ├── .gitignore
 └── README.md
 ```
 
 ## Progresso
 
-O repositório terá **10 listas** no total. 6 estão concluídas até o momento.
+O repositório reúne **8 listas**, todas concluídas.
 
 - [x] **Lista 1** — Variáveis, entrada/saída e expressões aritméticas (25 exercícios)
 - [x] **Lista 2** — Operadores lógicos e estruturas de seleção (28 exercícios)
@@ -47,12 +50,10 @@ O repositório terá **10 listas** no total. 6 estão concluídas até o momento
 - [x] **Lista 4** — Vetores e matrizes (36 exercícios)
 - [x] **Lista 5** — Strings (24 exercícios)
 - [x] **Lista 6** — Funções (37 exercícios)
-- [ ] **Lista 7**
-- [ ] **Lista 8**
-- [ ] **Lista 9**
-- [ ] **Lista 10**
+- [x] **Lista 7** — Recursão (12 exercícios)
+- [x] **Lista 8** — Structs (10 exercícios)
 
-Total: **191 exercícios** resolvidos em 6 de 10 listas.
+Total: **213 exercícios** resolvidos nas 8 listas.
 
 ## Listas de exercícios
 
@@ -160,6 +161,44 @@ Conceitos praticados:
 - Números aleatórios com `rand`, `srand` e `time` (`<stdlib.h>`, `<time.h>`)
 - `long long` para números grandes (validação de CPF)
 
+### Lista 7 — Recursão
+
+Funções que chamam a si mesmas, resolvendo um problema a partir de uma versão menor dele.
+Os exercícios reescrevem de forma recursiva operações já feitas com laços — somatório,
+multiplicação por somas sucessivas, soma e contagem de dígitos, inversão de números e de
+vetores — e implementam definições matemáticas recursivas, como a função de Ackermann, o
+MDC e o resto e o quociente da divisão inteira. A lista termina com conversões entre as
+bases decimal e binária.
+
+Conceitos praticados:
+
+- Funções recursivas: caso base e passo recursivo
+- Recursão sobre os dígitos de um número (`n / 10`, `n % 10`)
+- Recursão sobre vetores com índices de início e fim
+- Funções auxiliares com acumulador
+- Definições matemáticas recursivas (Ackermann, MDC, divisão inteira e resto)
+- Conversão de decimal para binário e vice-versa
+
+### Lista 8 — Structs
+
+Criação de tipos próprios com `struct` para agrupar dados relacionados. Os primeiros
+exercícios modelam figuras geométricas (ponto, círculo e retângulo); os seguintes montam
+pequenos sistemas de cadastro com menus e relatórios — consumo de energia de
+eletrodomésticos, estacionamento, contas bancárias, estoque e pedidos, notas de uma turma,
+empresas e funcionários e consulta de livros em uma biblioteca. A lista termina com um tipo
+`Fracao` e suas quatro operações, sempre na forma reduzida (usando MDC e MMC).
+
+Conceitos praticados:
+
+- Definição de tipos com `struct` e `typedef`
+- Structs aninhadas e structs com vetores como campo
+- Vetores de structs para armazenar cadastros
+- Structs como parâmetro e retorno de funções
+- Ponteiros para struct e o operador `->`
+- Enumerações com `enum`
+- Leitura robusta de dados (retorno do `scanf` e limpeza do buffer de entrada)
+- Funções de `<string.h>` (`strcmp`, `strcpy`)
+
 ## Tecnologias
 
 - **Linguagem C** — usa recursos do padrão C99, como declaração de variável no `for`,
@@ -189,8 +228,12 @@ gcc Lista1\Exercicio01.c -o exercicio.exe
 A convenção do repositório é gerar os binários em `Lista<N>/output/`, pasta ignorada pelo
 Git (crie-a na primeira vez, se necessário).
 
-Os exercícios que incluem `<math.h>` precisam da flag `-lm` na compilação (Lista 2 —
-exercícios 10, 12, 13 e 14; Lista 3 — exercício 14; Lista 6 — exercícios 1, 8, 9 e 33):
+Os exercícios que incluem `<math.h>` precisam da flag `-lm` na compilação:
+
+- Lista 2 — exercícios 10, 12, 13 e 14
+- Lista 3 — exercício 14
+- Lista 6 — exercícios 1, 8, 9 e 33
+- Lista 8 — exercício 2
 
 ```bash
 gcc Lista2/Exercicio12.c -o exercicio -lm
